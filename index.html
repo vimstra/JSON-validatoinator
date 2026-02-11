@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JSON validator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3>JSON validate-inator</h3>
+      <img
+        src="https://static.wikia.nocookie.net/great-characters/images/7/7f/3027066-6938013924-latest.png/revision/latest?cb=20191110042821"
+      />
+      <div id="json-form">
+        <p>Paste your JSON below:</p>
+        <textarea id="json-input" placeholder='{"key": "value"}'></textarea>
+      </div>
+
+      <div class="controls">
+        <button id="validate" onclick="validateJSON()" type="button">
+          Check
+        </button>
+        <button id="format" onclick="formatJSON()" type="button">Format</button>
+        <button id="clear" onclick="clearJSON()" type="button">
+          Self-destruct button
+        </button>
+      </div>
+
+      <div id="message-valid" class="hidden">JSON is valid!</div>
+      <div id="message-error" class="hidden"></div>
+    </div>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
